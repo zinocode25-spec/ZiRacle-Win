@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script defer src="../js/admin.js"></script>
+</head>
+<body class="body-bg">
+  <!-- Navigations -->
+  <nav class="navbar">
+    <div class="mob-res">
+    <div class="logo">
+      <a href="index.html">⚽ ZiRacle Win</a></div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+      <li><a href="analytics.html">Analytics</a></li>
+    </ul>
+  </nav>
+  <main class="main-content glass">
+    <h1>Admin – Add Tips</h1>
+    <form id="tipForm">
+      <input type="text" placeholder="Match" id="match" required><br>
+      <input type="text" placeholder="Pick" id="pick" required><br>
+      <input type="text" placeholder="Odds" id="odds" required><br>
+      <input type="text" placeholder="Reason (optional)" id="reason"><br>
+      <button type="submit">Add Tip</button>
+    </form>
+    <h2>Today's Tips</h2>
+    <div id="previewTips"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

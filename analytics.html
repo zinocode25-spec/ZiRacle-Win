@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Analytics - ZiRacle Win</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="../js/analytics.js"></script>
+</head>
+<body class="body-bg">
+  <!-- Navigations -->
+  <nav class="navbar">
+    <div class="mob-res">
+    <div class="logo">
+      <a href="index.html">⚽ ZiRacle Win</a></div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+      <li><a href="analytics.html">Analytics</a></li>
+    </ul>
+  </nav>
+  <header class="header">
+    <h1>📊 Analytics Dashboard</h1>
+    <p>Performance metrics and insights</p>
+  </header>
+  <main class="main-content">
+    <div class="analytics-grid">
+      <section class="glass analytics-card">
+        <h2>📈 Performance Overview</h2>
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <span class="metric-number">68%</span>
+            <span class="metric-label">Win Rate</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number positive">+12.5%</span>
+            <span class="metric-label">Profit/Loss</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">1.85</span>
+            <span class="metric-label">Avg Odds</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">47</span>
+            <span class="metric-label">Total Tips</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass analytics-card">
+        <h2>📊 Win Rate by Confidence</h2>
+        <canvas id="confidenceChart" width="400" height="200"></canvas>
+      </section>
+
+      <section class="glass analytics-card">
+        <h2>🎯 Monthly Performance</h2>
+        <canvas id="monthlyChart" width="400" height="200"></canvas>
+      </section>
+
+      <section class="glass analytics-card">
+        <h2>⚽ League Performance</h2>
+        <div class="league-stats">
+          <div class="league-item">
+            <span class="league-name">Premier League</span>
+            <span class="league-winrate">72%</span>
+          </div>
+          <div class="league-item">
+            <span class="league-name">La Liga</span>
+            <span class="league-winrate">65%</span>
+          </div>
+          <div class="league-item">
+            <span class="league-name">Bundesliga</span>
+            <span class="league-winrate">70%</span>
+          </div>
+          <div class="league-item">
+            <span class="league-name">Serie A</span>
+            <span class="league-winrate">68%</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass analytics-card">
+        <h2>🔥 Hot Streaks</h2>
+        <div class="streak-info">
+          <div class="streak-item">
+            <span class="streak-label">Current Streak</span>
+            <span class="streak-value positive">Pending wins</span>
+          </div>
+          <div class="streak-item">
+            <span class="streak-label">Best Streak</span>
+            <span class="streak-value">Pending wins</span>
+          </div>
+          <div class="streak-item">
+            <span class="streak-label">Longest Losing</span>
+            <span class="streak-value negative">Pending losses</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass analytics-card">
+        <h2>💰 Bankroll Management</h2>
+        <div class="bankroll-info">
+          <div class="bankroll-item">
+            <span class="bankroll-label">Starting Bankroll</span>
+            <span class="bankroll-value">$1000</span>
+          </div>
+          <div class="bankroll-item">
+            <span class="bankroll-label">Current Bankroll</span>
+            <span class="bankroll-value positive">$1125</span>
+          </div>
+          <div class="bankroll-item">
+            <span class="bankroll-label">ROI</span>
+            <span class="bankroll-value positive">+12.5%</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 YourBrand. Bet responsibly. 18+ only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
